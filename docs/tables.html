@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nomal Table</h3>
+    <table border="1">
+        <!-- 테이블 만들 때 row 먼저 선언 -->
+        <tr>
+            <td colspan="2">row 1, colunm 1</td>
+            <!-- colspan : 컬럼을 병합할때 사용(가로) (2,1 삭제) -->
+            <td>row 1, colunm 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">row 2, colunm 1</td>
+            <!-- rowspan : 로우를 병합할때 사용(세로) (3,1 삭제) -->
+            <td>row 2, colunm 2</td>
+            <td>row 2, colunm 3</td>
+        </tr>
+        <tr>
+            <td>row 3, colunm 2</td>
+            <td>row 3, colunm 3</td>
+        </tr>
+        <tr>
+            <td>if first &lt; 1 row 4, &nbsp; colunm 1</td>
+            <!-- talble은 항상 사각형을 유지한다. 비어 있는 상태로 사각형 형태로 만든다.-->
+            <!-- &nbsp; : 다음 글자부터 특수기호 인식 -->
+            <!-- &lt; : < 역할 -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
